@@ -490,6 +490,7 @@ p{margin:0}
       <img src="images/thang.jpg" alt="Ảnh cô dâu và chú rể" data-nhan="Ảnh đôi" style="object-position:50% 28%">
       <img src="images/codau.jpg" alt="Ảnh cô dâu" data-nhan="Ảnh cô dâu" style="object-position:50% 42%">
     </div>
+    <p class="loi-bao" data-hu="chu" style="--tre:.2s">Trân trọng kính mời quý khách tham dự tiệc cưới lúc 15 giờ 00, ngày 28 tháng 11 năm 2026.</p>
     <p class="nhan" style="margin-top:14px" data-hu="gian">Lễ thành hôn</p>
     <p class="gio hien">Vào lúc <b>10 giờ 30</b></p>
     <div class="ngay-cuoi" data-hu="len">
@@ -511,7 +512,7 @@ p{margin:0}
 
   <!-- LỊCH + ĐẾM NGƯỢC -->
   <section class="phan phan--hong">
-    <div class="lich" data-hu="phong" aria-label="Lịch tháng 11 năm 2026, lễ thành hôn ngày 29">
+    <div class="lich" data-hu="phong" aria-label="Lịch tháng 11 năm 2026, tiệc cưới ngày 28 và lễ thành hôn ngày 29">
       <div class="lich__thang">Tháng 11 · 2026</div>
       <div class="lich__luoi" id="lich"></div>
     </div>
@@ -731,8 +732,8 @@ p{margin:0}
     if (am.paused) phat(); else { am.pause(); capNhatNut(false); }
   });
 
-  // Lịch tháng 11/2026, tuần bắt đầu thứ Hai. Ngày 29 là lễ thành hôn.
-  var NAM = 2026, THANG = 10, NGAY_CUOI = [29];
+  // Lịch tháng 11/2026, tuần bắt đầu thứ Hai. Ngày 28 tiệc cưới, ngày 29 lễ thành hôn.
+  var NAM = 2026, THANG = 10, NGAY_CUOI = [28, 29];
   var lich = document.getElementById('lich');
   var thu = ['T2','T3','T4','T5','T6','T7','CN'];
   var html = thu.map(function(t){ return '<div class="thu">' + t + '</div>'; }).join('');
