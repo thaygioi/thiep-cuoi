@@ -168,12 +168,12 @@ p{margin:0}
 .khung-anh img{width:100%; aspect-ratio:4/5; object-fit:cover}
 
 /* Hai họ */
-.hai-ho{display:grid; grid-template-columns:1fr 1px 1fr; gap:16px; width:100%; align-items:start}
+.hai-ho{display:grid; grid-template-columns:1fr 1px 1fr; gap:10px; width:calc(100% + 8px); margin-inline:-4px; align-items:start}
 .hai-ho .gach{background:var(--vien); align-self:stretch}
-.ho{display:flex; flex-direction:column; gap:4px; min-width:0}
+.ho{display:flex; flex-direction:column; gap:4px; min-width:0; container-type:inline-size}
 .ho h3{margin:0 0 6px; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:var(--do); font-weight:600}
-.ho p{font-size:15px}
-.ho .que{font-size:14px; color:var(--muc-nhat); margin-top:4px}
+.ho p{font-size:clamp(12.5px, 8.2cqi, 15px); white-space:nowrap}
+.ho .que{font-size:clamp(10.5px, 6.7cqi, 14px); color:var(--muc-nhat); margin-top:4px; line-height:1.35; white-space:nowrap}
 .loi-bao{font-size:15.5px; color:var(--muc); max-width:30ch; line-height:1.7}
 .vai{display:flex; flex-direction:column; gap:2px}
 .vai small{font-size:12px; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--muc-nhat)}
@@ -448,7 +448,7 @@ p{margin:0}
     <h1 class="ten-doi" data-hu="viet" style="--tre:.5s">Nguyễn Huy Hoàng<span class="va">&amp;</span>Nguyễn Thị Ngọc</h1>
     <p class="ngay-lon" data-hu="gian" style="--tre:1.2s">29-11-2026</p>
     <figure class="khung-anh" data-hu="khung" style="margin:14px 0 0; --tre:.4s">
-      <div class="cua"><img src="images/vuon.jpg" alt="Ảnh cưới của cô dâu và chú rể" data-nhan="Ảnh chính" style="object-position:50% 16%"></div>
+      <div class="cua"><img src="images/xe.jpg" alt="Ảnh cưới của cô dâu và chú rể" data-nhan="Ảnh chính" style="object-position:50% 40%"></div>
     </figure>
   </section>
 
